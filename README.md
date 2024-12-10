@@ -5,6 +5,10 @@
 
 IDPS is an intrusion detection and prevention system. This idps was created for Unix system. Project was implemented for educational purposes!!!
 
+Apache log file parsing, PostgreSQL database usage, tcp server and client, Diffie Hellman key exchange and AES256 encryption-decryption were realised. Be caruful all these functionы imply deep understanding and reqire patience during setting idps programme. Hope you can use it for fun or other projects.
+
+
+
 If you want to try this programm, start by installing apache server and configure httpd.conf file:
 
 ```bash
@@ -78,4 +82,31 @@ pip install psycopg2-binary
 
 ## About contribution and possible problems during usage
 
-firewalld ...
+By default, some built-in Linux firewall blocks apache traffic. To allow access we use the following commands firewall-cmd:
+```bash
+firewall-cmd --zone=public --permanent --add-service=http
+```
+
+```bash
+firewall-cmd --zone=public --permanent --add-service=https
+```
+
+```bash
+firewall-cmd - -reload
+```
+
+To look at the iptables rules:
+```bash
+iptables -L
+```
+
+To delete all iptables rules:
+```bash
+iptables -F
+```
+
+To make your possible debug process easer, I recommend you using Wireshark, because all ntp server-client functions here: key exchange, sending and receiving ip-addresses are in base64.
+
+
+
+Again: Project was implemented for educational purposes!!! 
