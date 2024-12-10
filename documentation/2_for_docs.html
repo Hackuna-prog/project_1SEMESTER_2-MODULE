@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>3_for_docs</title>
+    <meta name="generator" content="pydoctor 24.11.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          3_for_docs <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="index.html" class="internal-link" title="This module">3<wbr></wbr>_for<wbr></wbr>_docs</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#aes_decryption" class="internal-link" title="3_for_docs.aes_decryption">aes<wbr></wbr>_decryption</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#block_ip" class="internal-link" title="3_for_docs.block_ip">block<wbr></wbr>_ip</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#main" class="internal-link" title="3_for_docs.main">main</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">3_for_docs</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#aes_decryption" class="internal-link" title="3_for_docs.aes_decryption">aes<wbr></wbr>_decryption</a></code></td>
+    <td>AES256 decryption with constat vector and key from Diffie Hellman key exchange. Returns encrypted ip-adress.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#block_ip" class="internal-link" title="3_for_docs.block_ip">block<wbr></wbr>_ip</a></code></td>
+    <td>function fork process and block ip-address calling os execl with iptables</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#main" class="internal-link" title="3_for_docs.main">main</a></code></td>
+    <td>main function starts server socket, makes Diffie Hellman key exchange and send decrypted ip-address in iptables</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="3_for_docs.aes_decryption">
+    
+  </a>
+  <a name="aes_decryption">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">aes_decryption</span><span class="function-signature">(ct, key)</span>:
+    
+    <a class="headerLink" href="#aes_decryption" title="3_for_docs.aes_decryption">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>AES256 decryption with constat vector and key from Diffie Hellman key exchange. Returns encrypted ip-adress.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ct:</span>base64 string</td><td class="fieldArgDesc">encrypted ip_addr</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span>string</td><td class="fieldArgDesc">key after Diffie Hellman exchange</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">iv:</span>bytes string</td><td class="fieldArgDesc">constant vector</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ip<wbr></wbr>_addr:</span>string</td><td class="fieldArgDesc">ip-address</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cipher:</span>cryptography object</td><td class="fieldArgDesc">cryptography object data</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">encryptor:</span>cryptography object</td><td class="fieldArgDesc">cryptography object encryption data</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">unpadder:</span>cryptography object</td><td class="fieldArgDesc">aes256 block</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">padded<wbr></wbr>_data:</span>cryptography object</td><td class="fieldArgDesc">ip_addr in block, lenght = 16 * k, k is Natural number</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">data:</span>base64 string</td><td class="fieldArgDesc">decrypted ip_addr</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="3_for_docs.block_ip">
+    
+  </a>
+  <a name="block_ip">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">block_ip</span><span class="function-signature">(attacker_ip)</span>:
+    
+    <a class="headerLink" href="#block_ip" title="3_for_docs.block_ip">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>function fork process and block ip-address calling os execl with iptables</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">attacker<wbr></wbr>_ip:</span>string</td><td class="fieldArgDesc">ip-address</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pid:</span>integer</td><td class="fieldArgDesc">new process pid</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="3_for_docs.main">
+    
+  </a>
+  <a name="main">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">main</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#main" title="3_for_docs.main">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>main function starts server socket, makes Diffie Hellman key exchange and send decrypted ip-address in iptables</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">sock:</span>diffiehellman object</td><td class="fieldArgDesc">socket</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">server<wbr></wbr>_address:</span>tuple</td><td class="fieldArgDesc">server ip-address and port</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">sock<wbr></wbr>_port:</span>integer</td><td class="fieldArgDesc">socket port in constant</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh1<wbr></wbr>_public<wbr></wbr>_base02:</span>bytes string</td><td class="fieldArgDesc">server socket public key in bytes</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh1<wbr></wbr>_public<wbr></wbr>_base64:</span>string in base64</td><td class="fieldArgDesc">server socket public key in base64</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh2<wbr></wbr>_public<wbr></wbr>_base64:</span>string in base64</td><td class="fieldArgDesc">client socket public key in base64</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh2<wbr></wbr>_public<wbr></wbr>_base02:</span>bytes string</td><td class="fieldArgDesc">client socket public key in bytes</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh1<wbr></wbr>_shared<wbr></wbr>_base02:</span>bytes string</td><td class="fieldArgDesc">client socket key after exchange in bytes</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh1<wbr></wbr>_shared<wbr></wbr>_base64:</span>string in base64</td><td class="fieldArgDesc">client socket key after exchange in bytes</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">key:</span>string</td><td class="fieldArgDesc">for aes256 key must be length 32</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ip<wbr></wbr>_addr:</span>string</td><td class="fieldArgDesc">ip-address in bytes</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ct:</span>string</td><td class="fieldArgDesc">ip-address after aes256 encryption</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dh1</span></td><td class="fieldArgDesc">private and public keys, other data for Diffie Hellman algorith</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for 3_for_docs,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.0 at 2024-12-10 00:11:09.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
