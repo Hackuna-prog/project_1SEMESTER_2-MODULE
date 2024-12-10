@@ -7,7 +7,7 @@ IDPS is an intrusion detection and prevention system. This idps was created for 
 
 Apache log file parsing, PostgreSQL database usage, tcp server and client, Diffie Hellman key exchange and AES256 encryption-decryption were realised. Be caruful all these functionы imply deep understanding and reqire patience during setting idps programme. Hope you can use it for fun or other projects.
 
-
+To watch how it works click on mp4 video. Also thre is a screenshot of wire wireshark trafic with base64 key in Diffie Hellman key exchange by tcp server.
 
 If you want to try this programm, start by installing apache server and configure httpd.conf file:
 
