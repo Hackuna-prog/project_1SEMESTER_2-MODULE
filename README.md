@@ -5,9 +5,11 @@
 
 IDPS is an intrusion detection and prevention system. This idps was created for Unix system. Project was implemented for educational purposes!!!
 
-Apache log file parsing, PostgreSQL database usage, tcp server and client, Diffie Hellman key exchange and AES256 encryption-decryption were realised. Be caruful all these functionы imply deep understanding and reqire patience during setting idps programme. Hope you can use it for fun or other projects.
+Apache log file parsing, PostgreSQL database usage, tcp server and client, Diffie Hellman key exchange and AES256 encryption-decryption have been realised. Be caruful, all these functions imply deep understanding and reqire patience during setting idps programme. Hope you can use it for fun or other projects.
 
-To watch how it works click on mp4 video. Also thre is a screenshot of wire wireshark trafic with base64 key in Diffie Hellman key exchange by tcp server.
+To watch how it works click on mp4 video. Also thre is a screenshot of wireshark trafic with base64 key in Diffie Hellman key exchange by tcp server.
+
+Shortly how it works: 1 module makes parsing of Apache log file and send data to PostgreSQL, 2 one analyses previous day (or other day logs, which has representative sample of server activity, including both good clients and long-term attacks), then tcp server-client connection makes Diffie Hellman key exchange between 2 and 3 modules. In 2 module bad client ipaddress is encrypted by AES256 and sended to 3 module by established connection. 3 module calls iptables to reject access to server for attacker. All modules are autonomous and nonstop.
 
 If you want to try this programm, start by installing apache server and configure httpd.conf file:
 
@@ -82,7 +84,7 @@ pip install psycopg2-binary
 
 ## About contribution and possible problems during usage
 
-By default, some built-in Linux firewall blocks apache traffic. To allow access we use the following commands firewall-cmd:
+By default, some built-in Linux firewall blocks apache traffic. To allow access use the following commands firewall-cmd:
 ```bash
 firewall-cmd --zone=public --permanent --add-service=http
 ```
